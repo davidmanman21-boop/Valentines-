@@ -5,6 +5,7 @@ const hintText = document.getElementById('hintText');
 const questionCard = document.getElementById('questionCard');
 const celebration = document.getElementById('celebration');
 const arrowHeartStage = document.getElementById('arrowHeartStage');
+const bgMusic = document.getElementById('bgMusic'); // Added for music
 
 let noCount = 0;
 
@@ -72,3 +73,15 @@ yesBtn.addEventListener('click', () => {
     }, 1500);
   });
 });
+
+// ---- Mobile Music Fix Added ----
+function startMusic() {
+  if (bgMusic) {
+    bgMusic.play().catch(() => {});
+    document.removeEventListener("click", startMusic);
+    document.removeEventListener("touchstart", startMusic);
+  }
+}
+
+document.addEventListener("click", startMusic);
+document.addEventListener("touchstart", startMusic);

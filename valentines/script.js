@@ -46,12 +46,24 @@ noBtn.addEventListener('click', () => {
   hintText.textContent = 'Nope 😘 Try again. (Hint: press Yes!)';
 
   if (noCount >= 2) {
+<<<<<<< HEAD
     noBtn.textContent = 'No? 🥺';
+=======
+    noBtn.textContent = 'baby?😢';
+  }
+  
+  if (noCount >= 3) {
+    noBtn.textContent = 'You better say yes 😠';
+>>>>>>> d58f94d (Add images and update project)
   }
 
   if (noCount >= 4) {
     noBtn.disabled = true;
+<<<<<<< HEAD
     noBtn.textContent = 'Still no? 😅';
+=======
+    noBtn.textContent = 'i see the tooth😞';
+>>>>>>> d58f94d (Add images and update project)
     hintText.textContent = 'Try again, my love... the Yes button is calling you 💞';
   }
 });

@@ -1,11 +1,20 @@
 :root {
   --pink-100: #ffd7e7;
-  --pink-200: #ffb8d2;
+<<<<<<< HEAD
+  --pink-200: #ffb8d2;  
   --pink-400: #ff6fa4;
   --pink-500: #ff4d91;
   --pink-700: #c4336b;
   --wine: #6f193f;
   --bg: radial-gradient(circle at 20% 20%, #ffeef6 0%, #ffd9ea 35%, #ffbdd9 75%, #ff9cc8 100%);
+=======
+  --pink-200: #ff0404;
+  --pink-400: #ff6fa4;
+  --pink-500: #ff4d91;
+  --red-700: #c43333;
+  --wine: #6f193f;
+  --bg: radial-gradient(circle at 1% 20%, #e2002daf 0%, #e2002de9 35%, #e2002dd1 75%, #e2002db9 100%);
+>>>>>>> d58f94d (Add images and update project)
   --white: #fff;
   --shadow: 0 18px 40px rgba(143, 29, 78, 0.28);
 }
@@ -48,7 +57,11 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   background: var(--pink-500);
+=======
+  background: var(--white);
+>>>>>>> d58f94d (Add images and update project)
   border-radius: 50%;
 }
 
@@ -61,7 +74,11 @@ body {
 }
 
 .heart-fall {
+<<<<<<< HEAD
   background: var(--pink-500);
+=======
+  background: var(--white);
+>>>>>>> d58f94d (Add images and update project)
   transform: rotate(45deg);
 }
 

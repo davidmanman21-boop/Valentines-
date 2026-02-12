@@ -62,6 +62,11 @@ noBtn.addEventListener('click', () => {
 });
 
 yesBtn.addEventListener('click', () => {
+  // Start music safely on mobile
+  if (bgMusic) {
+    bgMusic.play().catch(() => {});
+  }
+
   questionCard.classList.add('hidden');
   celebration.classList.remove('hidden');
 
@@ -73,6 +78,7 @@ yesBtn.addEventListener('click', () => {
     }, 1500);
   });
 });
+
 
 // ---- Mobile Music Fix Added ----
 function startMusic() {
